@@ -1,6 +1,6 @@
-# Developing Zig with Docker
+# Developing the Zig Compiler with Docker
 
-This repo serves as a way to quickly get a development environment setup for developing Zig using Docker. It builds LLVM from source for the version currently used by Zig. This repo currently targets developing Zig using LLVM release 18.1.7.
+This repo serves as a way to quickly get a development environment setup for developing the Zig compiler using Docker. It builds LLVM from source for the version currently used by Zig. This repo currently targets developing Zig using LLVM release 18.1.7.
 
 TODO: Tagging/etc. scheme for different versions of LLVM for compiling different versions of Zig?
 
