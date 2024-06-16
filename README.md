@@ -13,6 +13,7 @@ docker build --tag [your_tag] .
 
 ## Building "stage 3" Zig From Source
 
+Run the following in the zig repository root after cloning:
 ``` shell
 docker run --rm -v "$(pwd)":/workspace -w /workspace [your_tag] ./build_stage3.sh
 ```
