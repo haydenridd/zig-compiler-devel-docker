@@ -26,11 +26,11 @@ This will start your image, build a zig binary (in release mode) and store it in
 docker run --rm -v "$(pwd)":/workspace -w /workspace [your_tag] ./build_stage4.sh
 ```
 
-This is the reccomended flow for the quickest way to test changes you've made to the compiler. It uses the zig binary `build/stage3/zig` to rebuild Zig and create `stage4/zig`.
+This is the recommended flow for the quickest way to test changes you've made to the compiler. It uses the zig binary `build/stage3/zig` to rebuild Zig and create `stage4/zig`.
 
 ## More Info
 - You do not have to use `build_stage3.sh` or `build_stage4.sh` if you don't want to, they're merely provided as example commands to build Zig taken directly from:
     - https://github.com/ziglang/zig/wiki/Building-Zig-From-Source
-- This image builds LLVM in release mode, which is reccomended unless you need a debug build for low level LLVM debugging, see the following for more info:
+- This image builds LLVM in release mode, which is recommended unless you need a debug build for low level LLVM debugging, see the following for more info:
     - https://github.com/ziglang/zig/wiki/How-to-build-LLVM,-libclang,-and-liblld-from-source#posix
 - The image provides the ENV variable $LLVM_INSTALL_PATH as a convenience for where the build LLVM artifacts are installed
