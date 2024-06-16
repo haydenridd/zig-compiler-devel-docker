@@ -8,11 +8,10 @@ RUN dnf install -y \
     cmake \
     git \
     gcc \
+    libgcc \
     gcc-c++ \
-    libstdc++-devel \
-    libstdc++-static \
-    libgcc 
-
+    libstdc++-static
+    
 RUN git clone --depth 1 --branch llvmorg-18.1.7 https://github.com/llvm/llvm-project llvm-project-18
 RUN cmake -B ./llvm-project-18/build-release -S ./llvm-project-18/llvm \
   -DCMAKE_INSTALL_PREFIX=/home/local/llvm18-release \
